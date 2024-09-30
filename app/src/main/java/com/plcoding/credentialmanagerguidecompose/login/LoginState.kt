@@ -1,9 +1,9 @@
-package com.plcoding.credentialmanagerguidecompose.login
+package com.plcoding.credentialmanagerguidecompose
 
-data class LoginState(
+data class LoginState (
     val loggedInUser: String? = null,
-    val username: String = "user",
-    val password: String = "pass",
+    val username: String = "bob",
+    val password: String = "",
     val errorMessage: String? = null,
     val isRegister: Boolean = false
 )
