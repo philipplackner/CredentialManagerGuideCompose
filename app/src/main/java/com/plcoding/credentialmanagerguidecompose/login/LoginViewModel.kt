@@ -52,6 +52,7 @@ class LoginViewModel: ViewModel() {
                         state = state.copy(
                             loggedInUser = action.result.username
                         )
+                        action.onLoggedIn(action.result.username)
                     }
                     is SignInResult.NoCredentials -> {
                         state = state.copy(
